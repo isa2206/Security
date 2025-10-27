@@ -7,5 +7,8 @@ namespace Security.Repositories
         Task<IEnumerable<Hospital>> GetAll();
         Task<Hospital> GetOne(Guid id);
         Task Add(Hospital hospital);
+        Task Update(Hospital hospital);
+        Task Delete(Hospital hospital);
+        Task<IEnumerable<Hospital>> GetAllByTypes(IEnumerable<int> types);
     }
 }
